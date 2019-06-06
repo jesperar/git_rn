@@ -65,9 +65,7 @@ class PopularTab extends Component {
       <View style={styles.container}>
         <Text style={styles.welcome}>{tabLabel}</Text>
         <Text onPress={() => {
-          NavigationUtil.goPage({
-            navigation: this.props.navigation
-          }, 'DetailPage')
+          NavigationUtil.goPage('DetailPage')
         }}>跳转到详情页</Text>
       </View>
     );
